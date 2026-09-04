@@ -76,11 +76,11 @@ body {
 .app-container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 16px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Header Navbar */
@@ -90,9 +90,11 @@ body {
     align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 14px 24px;
+    padding: 12px 20px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .brand {
@@ -135,7 +137,8 @@ body {
 .status-pills {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .pill {
@@ -177,21 +180,23 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: wrap;
 }
 
 .theme-toggle-btn {
     background: var(--bg-input);
     border: 1px solid var(--border-color);
     color: var(--text-muted);
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border-radius: var(--radius-md);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
+    flex-shrink: 0;
 }
 
 .theme-toggle-btn:hover {
@@ -206,15 +211,16 @@ body {
     background: transparent;
     border: 1px solid transparent;
     color: var(--text-muted);
-    padding: 9px 16px;
+    padding: 7px 11px;
     border-radius: var(--radius-md);
     font-family: var(--font-main);
-    font-size: 0.88rem;
+    font-size: 0.83rem;
     font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    white-space: nowrap;
     transition: all 0.2s ease;
 }
 
@@ -304,14 +310,89 @@ body {
     margin-bottom: 10px;
 }
 
+/* Preset Cards Header & Capture Tool Panel */
+.preset-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.preset-header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sample-capture-panel {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.sample-step-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+@media (max-width: 640px) {
+    .sample-step-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sample-step label, .sample-actions label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sample-select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.action-btn-row {
+    display: flex;
+    gap: 8px;
+}
+
+.sample-panel-hint {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.4;
+}
+
 /* Preset Cards Grid */
 .preset-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     gap: 12px;
 }
 
 .preset-card {
+    position: relative;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
@@ -322,6 +403,36 @@ body {
     flex-direction: column;
     gap: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.preset-card .btn-delete-sample {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(239, 68, 68, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.preset-card:hover .btn-delete-sample {
+    display: block;
+}
+
+.preset-card .btn-delete-sample:hover {
+    background: #dc2626;
+    transform: scale(1.15);
 }
 
 .preset-card:hover {
@@ -409,14 +520,16 @@ body {
 .vision-viewport {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 400px;
+    min-height: 380px;
     background: #0f172a;
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.5);
 }
 
 .vision-viewport img {
@@ -880,17 +993,86 @@ input[type="range"] {
     cursor: pointer;
 }
 
-.checkbox-label {
+/* Modern POS Invoice Card Grid & Total Hero Banner */
+.calc-card-grid {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 12px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 8px;
-    cursor: pointer;
 }
 
-.checkbox-label input {
-    accent-color: var(--emerald);
-    width: 16px;
-    height: 16px;
+.calc-grid-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.calc-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.calc-item-label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: var(--text-dim);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.calc-item-value {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+    font-family: var(--font-mono);
+}
+
+.calc-item-value.highlight {
+    color: var(--emerald);
+}
+
+.ai-status-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calc-total-hero {
+    background: linear-gradient(135deg, #059669, #047857);
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.25);
+}
+
+.total-hero-label span {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.total-hero-label small {
+    font-size: 0.68rem;
+    opacity: 0.85;
+}
+
+.total-hero-amount {
+    font-family: var(--font-mono);
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 /* Grand Total Banner */
@@ -1281,43 +1463,251 @@ body.dark-theme .grand-total-banner {
     border-radius: 20px;
 }
 
-.trainer-grid {
+/* ==========================================================================
+   Tabbed Category Studio with Large High-Res Sample Cards
+   ========================================================================== */
+.trainer-category-tabs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
 }
 
-.trainer-card {
-    background: var(--bg-input);
-    border: 1px solid var(--border-color);
+@media (max-width: 640px) {
+    .trainer-category-tabs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+.trainer-tab-btn {
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-md);
-    padding: 14px;
+    padding: 10px 12px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
 }
 
-.trainer-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.92rem;
+.trainer-tab-btn:hover {
+    border-color: var(--primary);
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+}
+
+.trainer-tab-btn.active {
+    border-color: var(--emerald);
+    background: var(--emerald-light);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.18);
+}
+
+body.dark-theme .trainer-tab-btn.active {
+    background: rgba(5, 150, 105, 0.2);
+}
+
+.tab-emoji {
+    font-size: 1.5rem;
+}
+
+.tab-label {
+    font-weight: 700;
+    font-size: 0.88rem;
     color: var(--text-main);
 }
 
-.trainer-card-header .tag {
+.tab-count-badge {
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--emerald);
-    background: var(--emerald-light);
+    background: rgba(5, 150, 105, 0.12);
     padding: 2px 8px;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
-.trainer-card-desc {
-    font-size: 0.78rem;
+/* Active Category Panel */
+.trainer-active-panel {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.trainer-active-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+.trainer-active-title h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trainer-active-title p {
+    font-size: 0.8rem;
     color: var(--text-muted);
-    line-height: 1.3;
+    margin-top: 2px;
+}
+
+.trainer-active-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.trainer-active-actions .btn, .trainer-active-actions label {
+    font-size: 0.82rem;
+    padding: 8px 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* Large Sample Cards Grid */
+.trainer-large-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+    max-height: 420px;
+    overflow-y: auto;
+    padding: 6px 2px;
+}
+
+@media (max-width: 480px) {
+    .trainer-large-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+.trainer-large-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trainer-large-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.trainer-card-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background: #0f172a;
+    overflow: hidden;
+}
+
+.trainer-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.trainer-large-card:hover .trainer-card-img {
+    transform: scale(1.05);
+}
+
+.trainer-sample-type-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
+    color: #f8fafc;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.trainer-sample-type-badge.custom {
+    background: rgba(5, 150, 105, 0.9);
+    border-color: #10b981;
+}
+
+.trainer-card-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--bg-card);
+}
+
+.trainer-card-footer .sample-meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.btn-delete-sample {
+    background: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.15s ease;
+    width: 100%;
+}
+
+.btn-delete-sample:hover {
+    background: #dc2626;
+    color: #ffffff;
+    border-color: #dc2626;
+}
+
+body.dark-theme .btn-delete-sample {
+    background: rgba(220, 38, 38, 0.2);
+    border-color: rgba(220, 38, 38, 0.4);
+    color: #f87171;
+}
+
+body.dark-theme .btn-delete-sample:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.trainer-gallery-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 .btn-block {
@@ -1325,3 +1715,587 @@ body.dark-theme .grand-total-banner {
     text-align: center;
     margin-top: 4px;
 }
+
+/* ==========================================================================
+   Anti-Fraud Mismatch Warning Banner
+   ========================================================================== */
+.fraud-alert-banner {
+    background: #fef2f2;
+    border: 2px solid #ef4444;
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2);
+    animation: pulse-border 1.5s infinite;
+}
+
+body.dark-theme .fraud-alert-banner {
+    background: rgba(127, 29, 29, 0.4);
+    border-color: #f87171;
+}
+
+.fraud-alert-icon {
+    font-size: 1.6rem;
+}
+
+.fraud-alert-content {
+    flex: 1;
+}
+
+.fraud-alert-content strong {
+    color: #dc2626;
+    font-size: 0.92rem;
+    display: block;
+}
+
+.fraud-alert-content p {
+    color: #991b1b;
+    font-size: 0.82rem;
+    margin-top: 2px;
+}
+
+body.dark-theme .fraud-alert-content strong { color: #f87171; }
+body.dark-theme .fraud-alert-content p { color: #fca5a5; }
+
+/* ==========================================================================
+   UPI Payment QR Code & Receipt Styling
+   ========================================================================== */
+.qr-box {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.qr-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.qr-hint {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+.payment-amount-box {
+    margin: 12px 0;
+    padding: 12px;
+    background: var(--bg-input);
+    border-radius: var(--radius-md);
+}
+
+.pay-label {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
+.pay-amt {
+    font-size: 1.8rem;
+    color: var(--emerald);
+    font-weight: 800;
+    font-family: var(--font-heading);
+}
+
+.pay-upi-id {
+    font-size: 0.84rem;
+    color: var(--text-main);
+    margin-top: 4px;
+}
+
+.payment-status-box {
+    padding: 10px 16px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    margin-bottom: 12px;
+}
+
+.payment-status-box.pending {
+    background: #fffbeb;
+    color: #b45309;
+    border: 1px solid #fde68a;
+}
+
+.order-cart-bar-embedded {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.receipt-print-area {
+    text-align: left;
+    background: #ffffff;
+    color: #000000;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 1px dashed #cbd5e1;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    margin-top: 14px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printable-receipt, #printable-receipt * {
+        visibility: visible;
+    }
+    #printable-receipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+    }
+}
+
+/* ==========================================================================
+   Comprehensive Mobile & Multi-Device Responsiveness (All Phone Sizes)
+   ========================================================================== */
+
+/* Tablets & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        padding: 10px 12px;
+        gap: 12px;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .vision-viewport {
+        height: 340px;
+        min-height: 300px;
+    }
+    .preset-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}
+
+/* Standard Mobile Phones (<= 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .app-container {
+        padding: 6px 8px;
+        gap: 8px;
+    }
+    .navbar {
+        padding: 10px 12px;
+        gap: 8px;
+        border-radius: var(--radius-md);
+    }
+    .brand {
+        gap: 10px;
+    }
+    .brand-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .brand-text h1 {
+        font-size: 1.15rem;
+    }
+    .brand-text .subtitle {
+        font-size: 0.72rem;
+    }
+    .status-pills {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .pill {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+    #btn-serial-connect {
+        flex: 1 1 auto;
+        justify-content: center;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .nav-btn {
+        flex: 1 1 auto;
+        justify-content: center;
+        padding: 6px 8px;
+        font-size: 0.76rem;
+    }
+    .card {
+        padding: 14px 12px;
+        border-radius: var(--radius-lg);
+        gap: 14px;
+    }
+    .card-header {
+        padding-bottom: 10px;
+    }
+    .card-header h2 {
+        font-size: 1.08rem;
+    }
+    .preset-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .preset-card {
+        padding: 6px;
+        gap: 4px;
+    }
+    .preset-card img {
+        height: 65px;
+    }
+    .preset-title {
+        font-size: 0.75rem;
+    }
+    .preset-tag {
+        font-size: 0.68rem;
+    }
+    .vision-viewport {
+        height: 280px;
+        min-height: 250px;
+        border-radius: var(--radius-md);
+    }
+    #bbox-overlay {
+        padding: 8px;
+    }
+    .bbox-label {
+        font-size: 0.78rem !important;
+        padding: 4px 8px !important;
+    }
+    #bbox-match-hud {
+        font-size: 0.76rem !important;
+        padding: 6px 10px !important;
+        max-width: 95% !important;
+    }
+    #btn-resume-camera {
+        font-size: 0.8rem !important;
+        padding: 8px 14px !important;
+        bottom: 10px !important;
+        white-space: nowrap !important;
+    }
+    #btn-snap-camera {
+        font-size: 0.75rem !important;
+        padding: 6px 10px !important;
+        bottom: 10px !important;
+    }
+    .scale-digits {
+        font-size: clamp(2.4rem, 10vw, 3.4rem);
+    }
+    .scale-control-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        width: 100%;
+    }
+    .quick-weight-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 100%;
+    }
+    .quick-weight-btns .btn-chip {
+        flex: 1 1 calc(20% - 4px);
+        min-width: 50px;
+        text-align: center;
+        padding: 5px 2px;
+        font-size: 0.74rem;
+    }
+    .btn-block {
+        width: 100%;
+        font-size: 0.92rem;
+        padding: 12px 14px;
+    }
+    .modal-backdrop {
+        padding: 10px;
+    }
+    .modal-card {
+        max-width: 96vw;
+        max-height: 92vh;
+        border-radius: var(--radius-lg);
+    }
+    .modal-header {
+        padding: 14px 16px;
+    }
+    .modal-header h2 {
+        font-size: 1.1rem;
+    }
+    .modal-body {
+        padding: 14px 12px;
+        gap: 12px;
+    }
+    .modal-footer {
+        padding: 12px 14px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .trainer-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .price-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .price-item-card {
+        padding: 10px 12px;
+    }
+    .price-input-wrapper {
+        width: 120px;
+        padding: 4px 8px;
+    }
+    .price-input-wrapper input {
+        font-size: 0.95rem;
+    }
+    .fraud-alert-banner {
+        padding: 10px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .fraud-alert-icon {
+        font-size: 1.2rem;
+    }
+    .fraud-alert-content strong {
+        font-size: 0.85rem;
+    }
+    .fraud-alert-content p {
+        font-size: 0.78rem;
+    }
+    #btn-dismiss-fraud {
+        width: 100%;
+        margin-top: 4px;
+    }
+    .ai-results-box {
+        padding: 10px 12px;
+    }
+    .metric-tiles {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+    .metric-card {
+        padding: 6px 8px;
+    }
+    .m-label {
+        font-size: 0.68rem;
+    }
+    .m-val {
+        font-size: 0.78rem;
+    }
+}
+
+/* Ultra-Compact Small Phones (<= 480px, e.g. iPhone SE, small Androids) */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 4px 4px;
+        gap: 6px;
+    }
+    .navbar {
+        padding: 8px 10px;
+        border-radius: var(--radius-sm);
+    }
+    .brand-text h1 {
+        font-size: 1.02rem;
+    }
+    .card {
+        padding: 12px 8px;
+        border-radius: var(--radius-md);
+        gap: 10px;
+    }
+    .preset-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    .preset-card {
+        padding: 5px;
+    }
+    .preset-card img {
+        height: 55px;
+    }
+    .preset-title {
+        font-size: 0.72rem;
+    }
+    .preset-tag {
+        font-size: 0.65rem;
+    }
+    .vision-viewport {
+        height: 230px;
+        min-height: 200px;
+    }
+    .scale-digits {
+        font-size: clamp(2.0rem, 11vw, 2.8rem);
+    }
+    .scale-control-group .btn {
+        font-size: 0.70rem;
+        padding: 6px 2px;
+    }
+    .quick-weight-btns .btn-chip {
+        font-size: 0.70rem;
+        padding: 4px 2px;
+    }
+    .calc-total-box h2, .total-display h2, .pay-amt {
+        font-size: 1.6rem !important;
+    }
+    .btn-block, #btn-checkout, #btn-add-to-bill {
+        font-size: 0.85rem !important;
+        padding: 10px 12px !important;
+    }
+    .qr-code-wrapper {
+        width: 180px;
+        height: 180px;
+        padding: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Centered QR & Thermal POS Slip Receipt Styles */
+/* ---------------------------------------------------------------------- */
+.qr-box {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto 14px auto !important;
+    background: #ffffff !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--border-color) !important;
+    width: fit-content !important;
+    max-width: 250px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.qr-box img {
+    display: block !important;
+    margin: 0 auto 8px auto !important;
+    width: 190px !important;
+    height: 190px !important;
+    object-fit: contain !important;
+}
+
+.payment-amount-box {
+    text-align: center !important;
+    margin: 0 auto 12px auto !important;
+    max-width: 380px !important;
+}
+
+.payment-status-box {
+    margin: 0 auto 14px auto !important;
+    max-width: 380px !important;
+}
+
+/* 58mm / 80mm Compact Thermal Receipt Slip (On-Screen Preview) */
+.receipt-print-area {
+    width: 290px !important;
+    max-width: 100% !important;
+    margin: 14px auto !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    padding: 16px 14px !important;
+    border: 1px dashed #94a3b8 !important;
+    border-radius: 6px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+    text-align: left !important;
+}
+
+.receipt-slip-header {
+    text-align: center;
+    border-bottom: 1px dashed #334155;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.receipt-slip-header h3 {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0 0 2px 0;
+    letter-spacing: 0.5px;
+}
+
+.receipt-slip-header p {
+    font-size: 10.5px;
+    color: #475569;
+    margin: 1px 0;
+}
+
+.receipt-slip-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.receipt-slip-total {
+    border-top: 1.5px dashed #0f172a;
+    border-bottom: 1.5px dashed #0f172a;
+    padding: 8px 0;
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+.receipt-slip-footer {
+    text-align: center;
+    font-size: 10px;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* Exact 58mm / 80mm POS Thermal Slip Print Mode */
+@media print {
+    body * {
+        visibility: hidden !important;
+    }
+    #printable-receipt, #printable-receipt * {
+        visibility: visible !important;
+    }
+    #printable-receipt {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 72mm !important;
+        max-width: 72mm !important;
+        margin: 0 !important;
+        padding: 2mm 3mm !important;
+        border: none !important;
+        box-shadow: none !important;
+        font-family: 'Courier New', Courier, monospace !important;
+        font-size: 11px !important;
+        line-height: 1.25 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+    @page {
+        size: 80mm auto;
+        margin: 0;
+    }
+}
+

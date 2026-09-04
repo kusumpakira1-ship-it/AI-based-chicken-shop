@@ -1,0 +1,5 @@
+# .htaccess for Apache / XAMPP
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ router.php [QSA,L]

@@ -1,0 +1,681 @@
+[
+    {
+        "id": "6a9961dbdd2b5",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:32:35"
+    },
+    {
+        "id": "6a9961d1ce09f",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:32:25"
+    },
+    {
+        "id": "6a9961c6b84d3",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:32:14"
+    },
+    {
+        "id": "6a9961bc967f6",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:32:04"
+    },
+    {
+        "id": "6a9961b284094",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:54"
+    },
+    {
+        "id": "6a9961a840718",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 141,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:44"
+    },
+    {
+        "id": "6a99619e07d9a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:34"
+    },
+    {
+        "id": "6a996192dd4b4",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:22"
+    },
+    {
+        "id": "6a996188cb3e6",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 7,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:12"
+    },
+    {
+        "id": "6a99617ebbba4",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 3,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:31:02"
+    },
+    {
+        "id": "6a996174aa0c1",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 3,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:52"
+    },
+    {
+        "id": "6a99616a949c3",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 3,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:42"
+    },
+    {
+        "id": "6a99616082421",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 3,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:32"
+    },
+    {
+        "id": "6a9961566649c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:22"
+    },
+    {
+        "id": "6a99614c3d6bf",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:12"
+    },
+    {
+        "id": "6a9961422abeb",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:30:02"
+    },
+    {
+        "id": "6a9961381418e",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:52"
+    },
+    {
+        "id": "6a99612dede14",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:41"
+    },
+    {
+        "id": "6a996123dc5da",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:31"
+    },
+    {
+        "id": "6a996119b324a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:21"
+    },
+    {
+        "id": "6a99610fa04c6",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:11"
+    },
+    {
+        "id": "6a996105907ec",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:29:01"
+    },
+    {
+        "id": "6a9960fb8036d",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:51"
+    },
+    {
+        "id": "6a9960f167f51",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:41"
+    },
+    {
+        "id": "6a9960e74e741",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:31"
+    },
+    {
+        "id": "6a9960dd34f32",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:21"
+    },
+    {
+        "id": "6a9960d2da383",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:10"
+    },
+    {
+        "id": "6a9960c8c7b13",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:28:00"
+    },
+    {
+        "id": "6a9960be3c98f",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:27:50"
+    },
+    {
+        "id": "6a9960b428d9c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:27:40"
+    },
+    {
+        "id": "6a9960aa15c5a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:27:30"
+    },
+    {
+        "id": "6a99609fc2ed4",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:27:19"
+    },
+    {
+        "id": "6a996094a24fd",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:27:08"
+    },
+    {
+        "id": "6a99608a8e395",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:58"
+    },
+    {
+        "id": "6a9960806f708",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:48"
+    },
+    {
+        "id": "6a9960764b187",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:38"
+    },
+    {
+        "id": "6a99606c02555",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:28"
+    },
+    {
+        "id": "6a996061beddb",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 74,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:17"
+    },
+    {
+        "id": "6a99605784aa1",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:26:07"
+    },
+    {
+        "id": "6a99604d37168",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:57"
+    },
+    {
+        "id": "6a99604322e36",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:47"
+    },
+    {
+        "id": "6a9960390b02a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:37"
+    },
+    {
+        "id": "6a99602ee9eca",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:26"
+    },
+    {
+        "id": "6a996024d39a5",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:16"
+    },
+    {
+        "id": "6a99601ab8171",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:25:06"
+    },
+    {
+        "id": "6a996010a15f4",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:56"
+    },
+    {
+        "id": "6a996006928df",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:46"
+    },
+    {
+        "id": "6a995ffc827a3",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:36"
+    },
+    {
+        "id": "6a995ff26b9b4",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:26"
+    },
+    {
+        "id": "6a995fe8521d2",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:16"
+    },
+    {
+        "id": "6a995fde40f9e",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:24:06"
+    },
+    {
+        "id": "6a995fd431b6a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:23:56"
+    },
+    {
+        "id": "6a995fca17384",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 17:23:46"
+    },
+    {
+        "id": "6a99443e0fc5e",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:26:14"
+    },
+    {
+        "id": "6a99443dc729f",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:26:13"
+    },
+    {
+        "id": "6a99443d83ce4",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:26:13"
+    },
+    {
+        "id": "6a99442537350",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:25:49"
+    },
+    {
+        "id": "6a994424aa94c",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:25:48"
+    },
+    {
+        "id": "6a9944245787c",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:25:48"
+    },
+    {
+        "id": "6a994423b2836",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:25:47"
+    },
+    {
+        "id": "6a9944238ca6c",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Tare Zero",
+        "timestamp": "2026-09-03 15:25:47"
+    },
+    {
+        "id": "6a9917683396e",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:56"
+    },
+    {
+        "id": "6a99175c78652",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:44"
+    },
+    {
+        "id": "6a99175221f08",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:34"
+    },
+    {
+        "id": "6a99174b9dea3",
+        "mac": "LOAD-CELL-01",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:27"
+    },
+    {
+        "id": "6a991747acddf",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:23"
+    },
+    {
+        "id": "6a99173d3cfaf",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:13"
+    },
+    {
+        "id": "6a991732f2078",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:14:02"
+    },
+    {
+        "id": "6a991728b4529",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 61,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:52"
+    },
+    {
+        "id": "6a99171e3a896",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:42"
+    },
+    {
+        "id": "6a991714151ca",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:32"
+    },
+    {
+        "id": "6a99170a05929",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 5,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:22"
+    },
+    {
+        "id": "6a9916ffe27f8",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:11"
+    },
+    {
+        "id": "6a9916f5ce913",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:13:01"
+    },
+    {
+        "id": "6a9916eb8182c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:12:51"
+    },
+    {
+        "id": "6a9916e13b434",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 2,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:12:41"
+    },
+    {
+        "id": "6a9916d718491",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:12:31"
+    },
+    {
+        "id": "6a9916cca75fb",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 793,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:12:20"
+    },
+    {
+        "id": "6a9916c28d24e",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 792,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:12:10"
+    },
+    {
+        "id": "6a9916b5c7228",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -6,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:57"
+    },
+    {
+        "id": "6a9916ab6cf3c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -6,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:47"
+    },
+    {
+        "id": "6a9916a0e130c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:36"
+    },
+    {
+        "id": "6a99169656264",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:26"
+    },
+    {
+        "id": "6a99168bc0c2c",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:15"
+    },
+    {
+        "id": "6a9916819384d",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:11:05"
+    },
+    {
+        "id": "6a99167686c14",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:54"
+    },
+    {
+        "id": "6a99166aa652d",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:42"
+    },
+    {
+        "id": "6a99165f7faeb",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 1,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:31"
+    },
+    {
+        "id": "6a9916549cc37",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 2,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:20"
+    },
+    {
+        "id": "6a99164a30f50",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 0,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:10"
+    },
+    {
+        "id": "6a9916401aa5d",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 8,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:10:00"
+    },
+    {
+        "id": "6a99163572595",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -26702,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:09:49"
+    },
+    {
+        "id": "6a99162b28a3a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": -16500,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:09:39"
+    },
+    {
+        "id": "6a9915f805bb5",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 6,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:08:48"
+    },
+    {
+        "id": "6a9915299193a",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 12,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:05:21"
+    },
+    {
+        "id": "6a99151f43ba0",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 14,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:05:11"
+    },
+    {
+        "id": "6a991514710c1",
+        "mac": "88-A2-9E-4A-9D-2A",
+        "weight": 23,
+        "location": "Scale Counter",
+        "timestamp": "2026-09-03 12:05:00"
+    }
+]
